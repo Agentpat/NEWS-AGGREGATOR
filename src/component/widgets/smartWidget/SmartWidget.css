@@ -1,0 +1,28 @@
+/* SmartWidget.css */
+
+.smart-widget {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .widget-container {
+    flex-grow: 1;
+    width: 100%; /* Set each widget container to take 50% of the available space */
+    max-width: 400px; /* Add a max-width for better responsiveness */
+    margin-right: 20px;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 767px) {
+    .smart-widget {
+      flex-direction: column;
+    }
+  
+    .widget-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
